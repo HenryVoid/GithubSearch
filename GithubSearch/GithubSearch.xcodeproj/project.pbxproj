@@ -17,7 +17,6 @@
 		6CF48D0728F409170059871A /* GithubSearchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF48D0628F409170059871A /* GithubSearchUITestsLaunchTests.swift */; };
 		6CF48D1D28F40BC50059871A /* Differentiator in Frameworks */ = {isa = PBXBuildFile; productRef = 6CF48D1C28F40BC50059871A /* Differentiator */; };
 		6CF48D1F28F40BC50059871A /* RxDataSources in Frameworks */ = {isa = PBXBuildFile; productRef = 6CF48D1E28F40BC50059871A /* RxDataSources */; };
-		6CF48D2128F40BC50059871A /* RxDataSources-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 6CF48D2028F40BC50059871A /* RxDataSources-Dynamic */; };
 		6CF48D2428F40BF90059871A /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = 6CF48D2328F40BF90059871A /* RxBlocking */; };
 		6CF48D2628F40BF90059871A /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 6CF48D2528F40BF90059871A /* RxCocoa */; };
 		6CF48D2828F40BF90059871A /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 6CF48D2728F40BF90059871A /* RxRelay */; };
@@ -66,7 +65,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6CF48D2828F40BF90059871A /* RxRelay in Frameworks */,
-				6CF48D2128F40BC50059871A /* RxDataSources-Dynamic in Frameworks */,
 				6CF48D3628F40C6B0059871A /* Then in Frameworks */,
 				6CF48D2D28F40C140059871A /* ReactorKit in Frameworks */,
 				6CF48D2428F40BF90059871A /* RxBlocking in Frameworks */,
@@ -205,7 +203,6 @@
 			packageProductDependencies = (
 				6CF48D1C28F40BC50059871A /* Differentiator */,
 				6CF48D1E28F40BC50059871A /* RxDataSources */,
-				6CF48D2028F40BC50059871A /* RxDataSources-Dynamic */,
 				6CF48D2328F40BF90059871A /* RxBlocking */,
 				6CF48D2528F40BF90059871A /* RxCocoa */,
 				6CF48D2728F40BF90059871A /* RxRelay */,
@@ -741,11 +738,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 6CF48D1B28F40BC50059871A /* XCRemoteSwiftPackageReference "RxDataSources" */;
 			productName = RxDataSources;
-		};
-		6CF48D2028F40BC50059871A /* RxDataSources-Dynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 6CF48D1B28F40BC50059871A /* XCRemoteSwiftPackageReference "RxDataSources" */;
-			productName = "RxDataSources-Dynamic";
 		};
 		6CF48D2328F40BF90059871A /* RxBlocking */ = {
 			isa = XCSwiftPackageProductDependency;
