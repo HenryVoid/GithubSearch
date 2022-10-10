@@ -40,6 +40,8 @@
 		6CF48D5828F4105C0059871A /* MainReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF48D5728F4105C0059871A /* MainReactor.swift */; };
 		6CF48D5A28F410810059871A /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF48D5928F410810059871A /* MainCell.swift */; };
 		6CF48D5C28F410AC0059871A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF48D5B28F410AC0059871A /* MainViewController.swift */; };
+		6CF48D5E28F410DD0059871A /* UseCase+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF48D5D28F410DD0059871A /* UseCase+.swift */; };
+		6CF48D6028F410F30059871A /* Observable+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF48D5F28F410F30059871A /* Observable+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +89,8 @@
 		6CF48D5728F4105C0059871A /* MainReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainReactor.swift; sourceTree = "<group>"; };
 		6CF48D5928F410810059871A /* MainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
 		6CF48D5B28F410AC0059871A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		6CF48D5D28F410DD0059871A /* UseCase+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UseCase+.swift"; sourceTree = "<group>"; };
+		6CF48D5F28F410F30059871A /* Observable+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observable+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +192,7 @@
 		6CF48D1428F409AB0059871A /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				6CF48D6128F410F70059871A /* Extension */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -275,6 +280,15 @@
 				6CF48D5B28F410AC0059871A /* MainViewController.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		6CF48D6128F410F70059871A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				6CF48D5D28F410DD0059871A /* UseCase+.swift */,
+				6CF48D5F28F410F30059871A /* Observable+.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -435,6 +449,8 @@
 				6CF48D4128F40DC80059871A /* RequestParams.swift in Sources */,
 				6CF48D4C28F40EC20059871A /* GithubSearchRepository.swift in Sources */,
 				6CF48CE428F409160059871A /* AppDelegate.swift in Sources */,
+				6CF48D6028F410F30059871A /* Observable+.swift in Sources */,
+				6CF48D5E28F410DD0059871A /* UseCase+.swift in Sources */,
 				6CF48CE628F409160059871A /* SceneDelegate.swift in Sources */,
 				6CF48D3F28F40DAC0059871A /* ContetntType.swift in Sources */,
 				6CF48D5628F40FF40059871A /* MainModel.swift in Sources */,
