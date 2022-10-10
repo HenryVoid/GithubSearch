@@ -15,6 +15,16 @@
 		6CF48CFB28F409170059871A /* GithubSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF48CFA28F409170059871A /* GithubSearchTests.swift */; };
 		6CF48D0528F409170059871A /* GithubSearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF48D0428F409170059871A /* GithubSearchUITests.swift */; };
 		6CF48D0728F409170059871A /* GithubSearchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF48D0628F409170059871A /* GithubSearchUITestsLaunchTests.swift */; };
+		6CF48D1D28F40BC50059871A /* Differentiator in Frameworks */ = {isa = PBXBuildFile; productRef = 6CF48D1C28F40BC50059871A /* Differentiator */; };
+		6CF48D1F28F40BC50059871A /* RxDataSources in Frameworks */ = {isa = PBXBuildFile; productRef = 6CF48D1E28F40BC50059871A /* RxDataSources */; };
+		6CF48D2428F40BF90059871A /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = 6CF48D2328F40BF90059871A /* RxBlocking */; };
+		6CF48D2628F40BF90059871A /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 6CF48D2528F40BF90059871A /* RxCocoa */; };
+		6CF48D2828F40BF90059871A /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 6CF48D2728F40BF90059871A /* RxRelay */; };
+		6CF48D2A28F40BF90059871A /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6CF48D2928F40BF90059871A /* RxSwift */; };
+		6CF48D2D28F40C140059871A /* ReactorKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6CF48D2C28F40C140059871A /* ReactorKit */; };
+		6CF48D3028F40C2F0059871A /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6CF48D2F28F40C2F0059871A /* SnapKit */; };
+		6CF48D3328F40C4F0059871A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 6CF48D3228F40C4F0059871A /* Alamofire */; };
+		6CF48D3628F40C6B0059871A /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 6CF48D3528F40C6B0059871A /* Then */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +64,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CF48D2828F40BF90059871A /* RxRelay in Frameworks */,
+				6CF48D3628F40C6B0059871A /* Then in Frameworks */,
+				6CF48D2D28F40C140059871A /* ReactorKit in Frameworks */,
+				6CF48D2428F40BF90059871A /* RxBlocking in Frameworks */,
+				6CF48D2628F40BF90059871A /* RxCocoa in Frameworks */,
+				6CF48D3328F40C4F0059871A /* Alamofire in Frameworks */,
+				6CF48D1D28F40BC50059871A /* Differentiator in Frameworks */,
+				6CF48D3028F40C2F0059871A /* SnapKit in Frameworks */,
+				6CF48D1F28F40BC50059871A /* RxDataSources in Frameworks */,
+				6CF48D2A28F40BF90059871A /* RxSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +200,18 @@
 			dependencies = (
 			);
 			name = GithubSearch;
+			packageProductDependencies = (
+				6CF48D1C28F40BC50059871A /* Differentiator */,
+				6CF48D1E28F40BC50059871A /* RxDataSources */,
+				6CF48D2328F40BF90059871A /* RxBlocking */,
+				6CF48D2528F40BF90059871A /* RxCocoa */,
+				6CF48D2728F40BF90059871A /* RxRelay */,
+				6CF48D2928F40BF90059871A /* RxSwift */,
+				6CF48D2C28F40C140059871A /* ReactorKit */,
+				6CF48D2F28F40C2F0059871A /* SnapKit */,
+				6CF48D3228F40C4F0059871A /* Alamofire */,
+				6CF48D3528F40C6B0059871A /* Then */,
+			);
 			productName = GithubSearch;
 			productReference = 6CF48CE028F409160059871A /* GithubSearch.app */;
 			productType = "com.apple.product-type.application";
@@ -252,6 +284,14 @@
 				Base,
 			);
 			mainGroup = 6CF48CD728F409160059871A;
+			packageReferences = (
+				6CF48D1B28F40BC50059871A /* XCRemoteSwiftPackageReference "RxDataSources" */,
+				6CF48D2228F40BF90059871A /* XCRemoteSwiftPackageReference "RxSwift" */,
+				6CF48D2B28F40C140059871A /* XCRemoteSwiftPackageReference "ReactorKit" */,
+				6CF48D2E28F40C2F0059871A /* XCRemoteSwiftPackageReference "SnapKit" */,
+				6CF48D3128F40C4F0059871A /* XCRemoteSwiftPackageReference "Alamofire" */,
+				6CF48D3428F40C6B0059871A /* XCRemoteSwiftPackageReference "Then" */,
+			);
 			productRefGroup = 6CF48CE128F409160059871A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -636,6 +676,110 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6CF48D1B28F40BC50059871A /* XCRemoteSwiftPackageReference "RxDataSources" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxDataSources.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		6CF48D2228F40BF90059871A /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		6CF48D2B28F40C140059871A /* XCRemoteSwiftPackageReference "ReactorKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactorKit/ReactorKit";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		6CF48D2E28F40C2F0059871A /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+		6CF48D3128F40C4F0059871A /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		6CF48D3428F40C6B0059871A /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6CF48D1C28F40BC50059871A /* Differentiator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6CF48D1B28F40BC50059871A /* XCRemoteSwiftPackageReference "RxDataSources" */;
+			productName = Differentiator;
+		};
+		6CF48D1E28F40BC50059871A /* RxDataSources */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6CF48D1B28F40BC50059871A /* XCRemoteSwiftPackageReference "RxDataSources" */;
+			productName = RxDataSources;
+		};
+		6CF48D2328F40BF90059871A /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6CF48D2228F40BF90059871A /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxBlocking;
+		};
+		6CF48D2528F40BF90059871A /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6CF48D2228F40BF90059871A /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		6CF48D2728F40BF90059871A /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6CF48D2228F40BF90059871A /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		6CF48D2928F40BF90059871A /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6CF48D2228F40BF90059871A /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		6CF48D2C28F40C140059871A /* ReactorKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6CF48D2B28F40C140059871A /* XCRemoteSwiftPackageReference "ReactorKit" */;
+			productName = ReactorKit;
+		};
+		6CF48D2F28F40C2F0059871A /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6CF48D2E28F40C2F0059871A /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		6CF48D3228F40C4F0059871A /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6CF48D3128F40C4F0059871A /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		6CF48D3528F40C6B0059871A /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6CF48D3428F40C6B0059871A /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6CF48CD828F409160059871A /* Project object */;
 }
