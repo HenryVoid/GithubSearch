@@ -26,6 +26,12 @@
 		6CF48D3328F40C4F0059871A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 6CF48D3228F40C4F0059871A /* Alamofire */; };
 		6CF48D3628F40C6B0059871A /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 6CF48D3528F40C6B0059871A /* Then */; };
 		6CF48D3928F40D1D0059871A /* APILogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF48D3828F40D1D0059871A /* APILogger.swift */; };
+		6CF48D3B28F40D6E0059871A /* BaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF48D3A28F40D6E0059871A /* BaseAPI.swift */; };
+		6CF48D3D28F40D8F0059871A /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF48D3C28F40D8F0059871A /* TargetType.swift */; };
+		6CF48D3F28F40DAC0059871A /* ContetntType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF48D3E28F40DAC0059871A /* ContetntType.swift */; };
+		6CF48D4128F40DC80059871A /* RequestParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF48D4028F40DC80059871A /* RequestParams.swift */; };
+		6CF48D4328F40DDE0059871A /* HttpHeaderField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF48D4228F40DDE0059871A /* HttpHeaderField.swift */; };
+		6CF48D4628F40DFF0059871A /* Encodable+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF48D4528F40DFF0059871A /* Encodable+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +65,12 @@
 		6CF48D0428F409170059871A /* GithubSearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubSearchUITests.swift; sourceTree = "<group>"; };
 		6CF48D0628F409170059871A /* GithubSearchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubSearchUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		6CF48D3828F40D1D0059871A /* APILogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APILogger.swift; sourceTree = "<group>"; };
+		6CF48D3A28F40D6E0059871A /* BaseAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPI.swift; sourceTree = "<group>"; };
+		6CF48D3C28F40D8F0059871A /* TargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetType.swift; sourceTree = "<group>"; };
+		6CF48D3E28F40DAC0059871A /* ContetntType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContetntType.swift; sourceTree = "<group>"; };
+		6CF48D4028F40DC80059871A /* RequestParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestParams.swift; sourceTree = "<group>"; };
+		6CF48D4228F40DDE0059871A /* HttpHeaderField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpHeaderField.swift; sourceTree = "<group>"; };
+		6CF48D4528F40DFF0059871A /* Encodable+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +178,7 @@
 		6CF48D1528F409B10059871A /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				6CF48D4428F40DF10059871A /* Extension */,
 				6CF48D3728F40D100059871A /* Base */,
 			);
 			path = Network;
@@ -191,8 +204,21 @@
 			isa = PBXGroup;
 			children = (
 				6CF48D3828F40D1D0059871A /* APILogger.swift */,
+				6CF48D3A28F40D6E0059871A /* BaseAPI.swift */,
+				6CF48D3C28F40D8F0059871A /* TargetType.swift */,
+				6CF48D3E28F40DAC0059871A /* ContetntType.swift */,
+				6CF48D4028F40DC80059871A /* RequestParams.swift */,
+				6CF48D4228F40DDE0059871A /* HttpHeaderField.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		6CF48D4428F40DF10059871A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				6CF48D4528F40DFF0059871A /* Encodable+.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -345,10 +371,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CF48D3D28F40D8F0059871A /* TargetType.swift in Sources */,
 				6CF48D3928F40D1D0059871A /* APILogger.swift in Sources */,
 				6CF48CE828F409160059871A /* ViewController.swift in Sources */,
+				6CF48D4128F40DC80059871A /* RequestParams.swift in Sources */,
 				6CF48CE428F409160059871A /* AppDelegate.swift in Sources */,
 				6CF48CE628F409160059871A /* SceneDelegate.swift in Sources */,
+				6CF48D3F28F40DAC0059871A /* ContetntType.swift in Sources */,
+				6CF48D4628F40DFF0059871A /* Encodable+.swift in Sources */,
+				6CF48D3B28F40D6E0059871A /* BaseAPI.swift in Sources */,
+				6CF48D4328F40DDE0059871A /* HttpHeaderField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
