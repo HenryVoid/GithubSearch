@@ -20,8 +20,6 @@ final class MainCell: UITableViewCell {
         $0.backgroundColor = .clear
     }
     
-    public var disposeBag = DisposeBag()
-    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
@@ -34,8 +32,6 @@ final class MainCell: UITableViewCell {
     
     public override func prepareForReuse() {
         super.prepareForReuse()
-        
-        self.disposeBag = DisposeBag()
     }
 }
 
