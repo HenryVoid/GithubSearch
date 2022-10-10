@@ -18,6 +18,10 @@
 		6CF48D1D28F40BC50059871A /* Differentiator in Frameworks */ = {isa = PBXBuildFile; productRef = 6CF48D1C28F40BC50059871A /* Differentiator */; };
 		6CF48D1F28F40BC50059871A /* RxDataSources in Frameworks */ = {isa = PBXBuildFile; productRef = 6CF48D1E28F40BC50059871A /* RxDataSources */; };
 		6CF48D2128F40BC50059871A /* RxDataSources-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 6CF48D2028F40BC50059871A /* RxDataSources-Dynamic */; };
+		6CF48D2428F40BF90059871A /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = 6CF48D2328F40BF90059871A /* RxBlocking */; };
+		6CF48D2628F40BF90059871A /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 6CF48D2528F40BF90059871A /* RxCocoa */; };
+		6CF48D2828F40BF90059871A /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 6CF48D2728F40BF90059871A /* RxRelay */; };
+		6CF48D2A28F40BF90059871A /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6CF48D2928F40BF90059871A /* RxSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,9 +61,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CF48D2828F40BF90059871A /* RxRelay in Frameworks */,
 				6CF48D2128F40BC50059871A /* RxDataSources-Dynamic in Frameworks */,
+				6CF48D2428F40BF90059871A /* RxBlocking in Frameworks */,
+				6CF48D2628F40BF90059871A /* RxCocoa in Frameworks */,
 				6CF48D1D28F40BC50059871A /* Differentiator in Frameworks */,
 				6CF48D1F28F40BC50059871A /* RxDataSources in Frameworks */,
+				6CF48D2A28F40BF90059871A /* RxSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,6 +198,10 @@
 				6CF48D1C28F40BC50059871A /* Differentiator */,
 				6CF48D1E28F40BC50059871A /* RxDataSources */,
 				6CF48D2028F40BC50059871A /* RxDataSources-Dynamic */,
+				6CF48D2328F40BF90059871A /* RxBlocking */,
+				6CF48D2528F40BF90059871A /* RxCocoa */,
+				6CF48D2728F40BF90059871A /* RxRelay */,
+				6CF48D2928F40BF90059871A /* RxSwift */,
 			);
 			productName = GithubSearch;
 			productReference = 6CF48CE028F409160059871A /* GithubSearch.app */;
@@ -265,6 +277,7 @@
 			mainGroup = 6CF48CD728F409160059871A;
 			packageReferences = (
 				6CF48D1B28F40BC50059871A /* XCRemoteSwiftPackageReference "RxDataSources" */,
+				6CF48D2228F40BF90059871A /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			productRefGroup = 6CF48CE128F409160059871A /* Products */;
 			projectDirPath = "";
@@ -660,6 +673,14 @@
 				kind = branch;
 			};
 		};
+		6CF48D2228F40BF90059871A /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -677,6 +698,26 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 6CF48D1B28F40BC50059871A /* XCRemoteSwiftPackageReference "RxDataSources" */;
 			productName = "RxDataSources-Dynamic";
+		};
+		6CF48D2328F40BF90059871A /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6CF48D2228F40BF90059871A /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxBlocking;
+		};
+		6CF48D2528F40BF90059871A /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6CF48D2228F40BF90059871A /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		6CF48D2728F40BF90059871A /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6CF48D2228F40BF90059871A /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		6CF48D2928F40BF90059871A /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6CF48D2228F40BF90059871A /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
