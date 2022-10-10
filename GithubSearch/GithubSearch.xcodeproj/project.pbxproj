@@ -15,6 +15,9 @@
 		6CF48CFB28F409170059871A /* GithubSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF48CFA28F409170059871A /* GithubSearchTests.swift */; };
 		6CF48D0528F409170059871A /* GithubSearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF48D0428F409170059871A /* GithubSearchUITests.swift */; };
 		6CF48D0728F409170059871A /* GithubSearchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF48D0628F409170059871A /* GithubSearchUITestsLaunchTests.swift */; };
+		6CF48D1D28F40BC50059871A /* Differentiator in Frameworks */ = {isa = PBXBuildFile; productRef = 6CF48D1C28F40BC50059871A /* Differentiator */; };
+		6CF48D1F28F40BC50059871A /* RxDataSources in Frameworks */ = {isa = PBXBuildFile; productRef = 6CF48D1E28F40BC50059871A /* RxDataSources */; };
+		6CF48D2128F40BC50059871A /* RxDataSources-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 6CF48D2028F40BC50059871A /* RxDataSources-Dynamic */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CF48D2128F40BC50059871A /* RxDataSources-Dynamic in Frameworks */,
+				6CF48D1D28F40BC50059871A /* Differentiator in Frameworks */,
+				6CF48D1F28F40BC50059871A /* RxDataSources in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +186,11 @@
 			dependencies = (
 			);
 			name = GithubSearch;
+			packageProductDependencies = (
+				6CF48D1C28F40BC50059871A /* Differentiator */,
+				6CF48D1E28F40BC50059871A /* RxDataSources */,
+				6CF48D2028F40BC50059871A /* RxDataSources-Dynamic */,
+			);
 			productName = GithubSearch;
 			productReference = 6CF48CE028F409160059871A /* GithubSearch.app */;
 			productType = "com.apple.product-type.application";
@@ -252,6 +263,9 @@
 				Base,
 			);
 			mainGroup = 6CF48CD728F409160059871A;
+			packageReferences = (
+				6CF48D1B28F40BC50059871A /* XCRemoteSwiftPackageReference "RxDataSources" */,
+			);
 			productRefGroup = 6CF48CE128F409160059871A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -636,6 +650,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6CF48D1B28F40BC50059871A /* XCRemoteSwiftPackageReference "RxDataSources" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxDataSources.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6CF48D1C28F40BC50059871A /* Differentiator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6CF48D1B28F40BC50059871A /* XCRemoteSwiftPackageReference "RxDataSources" */;
+			productName = Differentiator;
+		};
+		6CF48D1E28F40BC50059871A /* RxDataSources */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6CF48D1B28F40BC50059871A /* XCRemoteSwiftPackageReference "RxDataSources" */;
+			productName = RxDataSources;
+		};
+		6CF48D2028F40BC50059871A /* RxDataSources-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6CF48D1B28F40BC50059871A /* XCRemoteSwiftPackageReference "RxDataSources" */;
+			productName = "RxDataSources-Dynamic";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6CF48CD828F409160059871A /* Project object */;
 }
