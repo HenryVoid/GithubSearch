@@ -25,6 +25,7 @@
 		6CF48D3028F40C2F0059871A /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6CF48D2F28F40C2F0059871A /* SnapKit */; };
 		6CF48D3328F40C4F0059871A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 6CF48D3228F40C4F0059871A /* Alamofire */; };
 		6CF48D3628F40C6B0059871A /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 6CF48D3528F40C6B0059871A /* Then */; };
+		6CF48D3928F40D1D0059871A /* APILogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF48D3828F40D1D0059871A /* APILogger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		6CF48D0028F409170059871A /* GithubSearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GithubSearchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CF48D0428F409170059871A /* GithubSearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubSearchUITests.swift; sourceTree = "<group>"; };
 		6CF48D0628F409170059871A /* GithubSearchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubSearchUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6CF48D3828F40D1D0059871A /* APILogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APILogger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +166,7 @@
 		6CF48D1528F409B10059871A /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				6CF48D3728F40D100059871A /* Base */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -182,6 +185,14 @@
 				6CF48CEE28F409170059871A /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		6CF48D3728F40D100059871A /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				6CF48D3828F40D1D0059871A /* APILogger.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,6 +345,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CF48D3928F40D1D0059871A /* APILogger.swift in Sources */,
 				6CF48CE828F409160059871A /* ViewController.swift in Sources */,
 				6CF48CE428F409160059871A /* AppDelegate.swift in Sources */,
 				6CF48CE628F409160059871A /* SceneDelegate.swift in Sources */,
