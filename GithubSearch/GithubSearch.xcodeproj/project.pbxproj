@@ -25,6 +25,7 @@
 		6CF48D2D28F40C140059871A /* ReactorKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6CF48D2C28F40C140059871A /* ReactorKit */; };
 		6CF48D3028F40C2F0059871A /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6CF48D2F28F40C2F0059871A /* SnapKit */; };
 		6CF48D3328F40C4F0059871A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 6CF48D3228F40C4F0059871A /* Alamofire */; };
+		6CF48D3628F40C6B0059871A /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 6CF48D3528F40C6B0059871A /* Then */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 			files = (
 				6CF48D2828F40BF90059871A /* RxRelay in Frameworks */,
 				6CF48D2128F40BC50059871A /* RxDataSources-Dynamic in Frameworks */,
+				6CF48D3628F40C6B0059871A /* Then in Frameworks */,
 				6CF48D2D28F40C140059871A /* ReactorKit in Frameworks */,
 				6CF48D2428F40BF90059871A /* RxBlocking in Frameworks */,
 				6CF48D2628F40BF90059871A /* RxCocoa in Frameworks */,
@@ -211,6 +213,7 @@
 				6CF48D2C28F40C140059871A /* ReactorKit */,
 				6CF48D2F28F40C2F0059871A /* SnapKit */,
 				6CF48D3228F40C4F0059871A /* Alamofire */,
+				6CF48D3528F40C6B0059871A /* Then */,
 			);
 			productName = GithubSearch;
 			productReference = 6CF48CE028F409160059871A /* GithubSearch.app */;
@@ -290,6 +293,7 @@
 				6CF48D2B28F40C140059871A /* XCRemoteSwiftPackageReference "ReactorKit" */,
 				6CF48D2E28F40C2F0059871A /* XCRemoteSwiftPackageReference "SnapKit" */,
 				6CF48D3128F40C4F0059871A /* XCRemoteSwiftPackageReference "Alamofire" */,
+				6CF48D3428F40C6B0059871A /* XCRemoteSwiftPackageReference "Then" */,
 			);
 			productRefGroup = 6CF48CE128F409160059871A /* Products */;
 			projectDirPath = "";
@@ -717,6 +721,14 @@
 				kind = branch;
 			};
 		};
+		6CF48D3428F40C6B0059871A /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -769,6 +781,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 6CF48D3128F40C4F0059871A /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		6CF48D3528F40C6B0059871A /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6CF48D3428F40C6B0059871A /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
