@@ -25,6 +25,10 @@ final class MainViewController: UIViewController, View {
         $0.register(MainCell.self, forCellReuseIdentifier: "MainCell")
     }
     
+    private let searchBar = UISearchBar().then {
+        $0.placeholder = "Search Repository"
+    }
+    
     var disposeBag = DisposeBag()
     
     init(_ reactor: Reactor) {
@@ -64,12 +68,7 @@ extension MainViewController {
     }
     
     private func configNavigationBar() {
-        let titleView = UILabel().then {
-            $0.text = "안녕"
-            $0.textColor = .black
-            $0.font = .systemFont(ofSize: 32, weight: .bold)
-        }
-        self.navigationItem.titleView = titleView
+        self.navigationItem.titleView = self.searchBar
     }
     
     private func makeTableViewLayout() {
