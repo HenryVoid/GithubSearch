@@ -18,6 +18,7 @@ protocol MainUseCaseType {
     var event: PublishSubject<MainUseCaseEvent> { get }
     
     func execute()
+    func search(page: Int, keyword: String)
 }
 
 final class MainUseCase: MainUseCaseType {
@@ -34,6 +35,10 @@ final class MainUseCase: MainUseCaseType {
     
     func execute() {
         self.searchRepo(page: 1, keyword: "RxSwift")
+    }
+    
+    func search(page: Int, keyword: String) {
+        self.searchRepo(page: page, keyword: keyword)
     }
 }
 
