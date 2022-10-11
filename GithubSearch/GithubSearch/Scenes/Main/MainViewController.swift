@@ -118,6 +118,13 @@ extension MainViewController {
             .asDriver()
             .drive(onNext: self.cellSelected)
             .disposed(by: self.disposeBag)
+        
+        self.searchBar
+            .rx.text.orEmpty
+            .debounce(.milliseconds(300), scheduler: MainScheduler.asyncInstance)
+            .map { Reactor.Action.search(keyword: $0) }
+            .bind(to: reactor.action)
+            .disposed(by: self.disposeBag)
     }
     
     private func bindState(_ reactor: Reactor) {
