@@ -13,6 +13,7 @@ import RxSwift
 final class MainReactor: Reactor {
     public enum Action {
         case viewWillAppear
+        case search(keyword: String)
     }
     
     public enum Mutation {
@@ -47,6 +48,8 @@ extension MainReactor {
         switch action {
         case .viewWillAppear:
             return self.fetch()
+        case .search(let keyword):
+            return self.search(keyword: keyword)
         }
     }
     
@@ -85,6 +88,13 @@ extension MainReactor {
     private func fetch() -> Observable<Mutation> {
         
         self.useCase.execute()
+        
+        return .empty()
+    }
+    
+    private func search(keyword: String) -> Observable<Mutation> {
+        
+        self.useCase.search(page: 1, keyword: keyword)
         
         return .empty()
     }
