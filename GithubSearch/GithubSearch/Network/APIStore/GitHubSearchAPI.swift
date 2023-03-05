@@ -6,13 +6,9 @@
 //
 
 import Foundation
-import Alamofire
 
 protocol GitHubSearchServiceType {
-    func search(
-        dto: GitHubSearch.Request,
-        completion: @escaping (GitHubSearch.Response?, Error?) -> Void
-    )
+    func search(dto: GitHubSearch.Request) async throws -> GitHubSearch.Response?
 }
 
 enum GitHubSearchAPI {

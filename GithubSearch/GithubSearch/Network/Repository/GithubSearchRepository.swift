@@ -12,7 +12,7 @@ protocol GitHubSearchRepositoryType {
         page: Int,
         keyword: String,
         completion: @escaping (GitHubSearch.Response?, Error?) -> Void
-    )
+    ) async throws -> GitHubSearch.Response
 }
 
 final class GitHubSearchRepository: GitHubSearchRepositoryType {
